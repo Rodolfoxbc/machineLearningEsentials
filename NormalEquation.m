@@ -16,4 +16,4 @@ theta=pinv(X'*X)*(X'*y)
 h=X*theta;
 
 #Determinate cost function (J)
-J=(sum((h-y).^2))^(1/2)
+J=(sum((hipotesis-y).^2)/size(X,1))^(0.5)
